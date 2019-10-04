@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Open+Sans+Condensed:300&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Electrolize', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+.header{
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 10px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('https://images.unsplash.com/photo-1508344928928-7165b67de128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
   min-height: 100vh;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +22,96 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.scores {
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  font-size: 30px;
+  color: orange;
+  border: 1px solid white;
+  justify-content: space-around;
+  width: 760px;
+  border-bottom: 2px solid white;
+}
+
+.bottom-content {
+  width: 500px;
+  text-align: left;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 600ms;
+ 
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: green;
+  background-color: orange;
+  border: 0px;  
+}
+
+.strike {
+  border-right: 2px solid white;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  margin-bottom: 0;
+  padding-right: 60px;
+}
+
+.ball {
+  border-right: 2px solid white;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  margin-bottom: 0;
+  padding-right: 60px;
+}
+
+.out {
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  margin-bottom: 0;
+  padding-right: 20px;
+}
+
+.roll-one {
+  display: flex;
+  justify-content: center;
+  width: 715px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.roll-two, .roll-three {
+  display: flex;
+  justify-content: flex-end;
+  width: 760px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.home {
+  display: flex;
+  width: 600px; 
+}
+
+.guest {
+  display: flex;
+  width: 600px; 
 }
